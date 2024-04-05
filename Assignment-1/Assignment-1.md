@@ -1,5 +1,5 @@
 **Reece Wayt <br>
-Assignment #1 <br>
+Assignment #1 Deliverables <br>
 ECE 373, Spring 2024** <br>
 ------
 
@@ -47,31 +47,44 @@ enum usb_device_speed {
 ```
 
 # B. Basic Linux Use:
-1. Log onto an Ubuntu Linux or other system (presumably your VirtualBox virtual machine)
-2. Under each heading in the toolbar at the top, pop up and note the menu and sub menu tools/topics.
-Note where you find Terminal and the gedit Text Editor, or any other text editor of your choice.
-3. Click on the Terminal entry to bring up a command shell line. This should be familiar to you from
-working with Cygwin in ECE 371/372. You will use Terminal to enter Linux commands.
-4. To get an overview of Linux structure and commands, go to
-http://linuxcommand.org/lc3_learning_the_shell.php . Study the “Learning the shell”
-section carefully and make some notes on basic commands to make a directory, determine current
-directory, change to a different directory, do a long or short form listing of the files in a directory,
-copy a file, etc.
-5. The “script” command is a useful way to make a record of all the commands you enter at the
-command shell and the results of those commands. Script records the commands, etc. in a file
-called typescript in your current directory. You terminate “script” with CTRL-D or 'exit'. You can
-then edit/print the typescript file. You will be turning in a copy of the typescript file for a shell
-practice session.
-6. For a start with the basic shell commands, enter script at the command prompt and then:
-A. Enter the command to determine the current directory
-B. Enter the command to command to show the files in that directory with file permissions.
-C. Enter a command to make a directory called ECE373.
-D. Change the working directory to that directory.
-E. Exit script with CTRL D.
-7. Find the gedit program under Application|Accessories and open a gedit window. Find the File|Open
-menu command and find the typescript file you created. Click on Open and you should see the
-typescript file in the window. It likely contains some control characters along with the commands
-but you can easily edit these out, if you 
+- See file `basic-linux-use-script.txt` for script output.
+
+# C. Basic C Programming in Linux: 
+- Example program is `fah-to-cel.c` below is the source code: 
+```C
+#include <stdio.h>
+
+int main() {
+    double fahrenheit, celsius;
+
+    printf("Enter temperature in Fahrenheit: ");
+    scanf("%lf", &fahrenheit);
+
+    // Convert Fahrenheit to Celsius
+    celsius = (fahrenheit - 32) * 5 / 9;
+
+    // Display the result
+    printf("%.2f Fahrenheit is %.2f Celsius.\n", fahrenheit, celsius);
+
+    return 0;
+}
+```
+
+- Script output is found in the file `basic-c-program-script.txt`, and it is also highlighted below: 
+```bash
+reecewayt@fossa-zen:~/ece373/linux-device-drivers/Assignment-1$ cat basic-c-program-script.txt 
+Script started on 2024-04-04 17:57:20-07:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="250" LINES="24"]
+reecewayt@fossa-zen:~/ece373/linux-device-drivers/Assignment-1$ gcc -g -o fah-to-cel fah-to-cel.c
+reecewayt@fossa-zen:~/ece373/linux-device-drivers/Assignment-1$ ./fah-to-cel
+Enter temperature in Fahrenheit: 96.3
+96.30 Fahrenheit is 35.72 Celsius.
+reecewayt@fossa-zen:~/ece373/linux-device-drivers/Assignment-1$ exit
+exit
+
+Script done on 2024-04-04 17:57:58-07:00 [COMMAND_EXIT_CODE="0"]
+```
+- Notes on GNU Debugger `man gdb`
+
 
 
 
