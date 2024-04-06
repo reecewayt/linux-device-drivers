@@ -1,4 +1,4 @@
-# vobx-setup.md
+# vbox-setup.md
 
 This purpose of this document is to outline the steps taken to connect VS Code to a Virtual Machine (via SSH)
 
