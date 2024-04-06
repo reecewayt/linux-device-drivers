@@ -98,8 +98,40 @@ Script done on 2024-04-04 17:57:58-07:00 [COMMAND_EXIT_CODE="0"]
 
 
 # D. Hello, Kernel: Loading a module into the Kernel
+For this part see file `hello_kernel.c`
 
+**`dmesg` outputs**
+- Loading the module into the kernel
+```bash
+sudo insmod hello_kernel.ko
+sudo dmesg
+```
 
+```bash
+               17:13:01.462345 main     Process ID: 943
+               17:13:01.462346 main     Package type: LINUX_64BITS_GENERIC
+[   33.657656] 17:13:01.472750 main     7.0.12 r159484 started. Verbose level = 0
+[   33.672918] 17:13:01.487993 main     vbglR3GuestCtrlDetectPeekGetCancelSupport: Supported (#1)
+[   37.037640] systemd-journald[226]: File /var/log/journal/cb382272615d4c5a967d3428d2b2e018/user-1000.journal corrupted or uncleanly shut down, renaming and replacing.
+[   57.337530] rfkill: input handler disabled
+[  355.371636] loop7: detected capacity change from 0 to 130880
+[ 7507.552620] Hello world!
+```
 
+- Removing module from kernel
+```bash
+sudo rmmod hello_kernel
+dmesg
+```
 
+```bash
+               17:13:01.462346 main     Package type: LINUX_64BITS_GENERIC
+[   33.657656] 17:13:01.472750 main     7.0.12 r159484 started. Verbose level = 0
+[   33.672918] 17:13:01.487993 main     vbglR3GuestCtrlDetectPeekGetCancelSupport: Supported (#1)
+[   37.037640] systemd-journald[226]: File /var/log/journal/cb382272615d4c5a967d3428d2b2e018/user-1000.journal corrupted or uncleanly shut down, renaming and replacing.
+[   57.337530] rfkill: input handler disabled
+[  355.371636] loop7: detected capacity change from 0 to 130880
+[ 7507.552620] Hello world!
+[ 7578.355150] End of the world
+```
 
