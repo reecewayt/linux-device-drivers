@@ -1,9 +1,0 @@
-Script started on 2024-04-04 17:57:20-07:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="250" LINES="24"]
-]0;reecewayt@fossa-zen: ~/ece373/linux-device-drivers/Assignment-1[01;32mreecewayt@fossa-zen[00m:[01;34m~/ece373/linux-device-drivers/Assignment-1[00m$ cd ECE373/mkdir ECE373[6Pls -al[3Ppwd[1Plstouch Assignment-1.mdls[Kcd Assignment-1/ls[Kmkdir Assignment-1ls[Kgit push origin mainremote add origin git@github.com:reecewayt/linux-device-drivers.gitpush origin main[Kls[Kmkdir Assignment-1ls[Kcd Assignment-1/ls[Ktouch Assignment-1.mdls[Kpwdls -almkdir ECE373[2Pcd ECE373/[Kgcc -g -o fah-to-cel fah-tocel[K[K[K-cel.c
-]0;reecewayt@fossa-zen: ~/ece373/linux-device-drivers/Assignment-1[01;32mreecewayt@fossa-zen[00m:[01;34m~/ece373/linux-device-drivers/Assignment-1[00m$ ./fah-to-cel
-Enter temperature in Fahrenheit: 96.3
-96.30 Fahrenheit is 35.72 Celsius.
-]0;reecewayt@fossa-zen: ~/ece373/linux-device-drivers/Assignment-1[01;32mreecewayt@fossa-zen[00m:[01;34m~/ece373/linux-device-drivers/Assignment-1[00m$ exit
-exit
-
-Script done on 2024-04-04 17:57:58-07:00 [COMMAND_EXIT_CODE="0"]
