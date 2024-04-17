@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Example command line: ./pull-assignments.sh a2-classroom clone
+
 # Ensure the script is executed from the root of your personal repository
 cd /home/reecewayt/ece373/linux-device-drivers
 
@@ -34,7 +36,7 @@ function pull_updates() {
 
   if [ -d "$dirName" ]; then
     echo "Pulling updates for $dirName from $remoteName..."
-    git -C "$dirName" pull "$remoteName" master
+    git -C "$dirName" pull "$remoteName" main
   else
     echo "Directory $dirName does not exist. Cannot pull updates."
   fi
