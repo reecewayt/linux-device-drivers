@@ -1,0 +1,17 @@
+Script started on 2024-04-18 18:28:39-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="244" LINES="28"]
+]0;reecewayt@fossa-zen: ~/ece373/assignment-2-character-driver-reecewayt/deliverables[01;32mreecewayt@fossa-zen[00m:[01;34m~/ece373/assignment-2-character-driver-reecewayt/deliverables[00m$ sudo insmod first-char-driver.ko dml[K[K[Kcml[Kdl_val=559
+[sudo] password for reecewayt: 
+]0;reecewayt@fossa-zen: ~/ece373/assignment-2-character-driver-reecewayt/deliverables[01;32mreecewayt@fossa-zen[00m:[01;34m~/ece373/assignment-2-character-driver-reecewayt/deliverables[00m$ ./usr-cdev-test 
+Device is open, lets read the current value held in the device...
+Current system value read from device: 559
+
+Let's write a new value, enter an integer value...
+4
+You entered 4...
+Write successful, lets check that everything worked by reading again...
+Current system value read from device: 4
+Program done, closing device now...
+]0;reecewayt@fossa-zen: ~/ece373/assignment-2-character-driver-reecewayt/deliverables[01;32mreecewayt@fossa-zen[00m:[01;34m~/ece373/assignment-2-character-driver-reecewayt/deliverables[00m$ exit
+exit
+
+Script done on 2024-04-18 18:29:28-07:00 [COMMAND_EXIT_CODE="0"]
