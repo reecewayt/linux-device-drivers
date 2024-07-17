@@ -1,0 +1,24 @@
+Script started on 2024-05-31 11:55:09-07:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="166" LINES="24"]
+]0;reecewayt@fossa-zen: ~/ece373/assignment-5-pci-led-with-timer-reecewayt/deliverables[01;32mreecewayt@fossa-zen[00m:[01;34m~/ece373/assignment-5-pci-led-with-timer-reecewayt/deliverables[00m$ sudo insmod ./build/my-e1000-drv-timer.ko blink_ratge[K[Ke=1
+[sudo] password for reecewayt: 
+]0;reecewayt@fossa-zen: ~/ece373/assignment-5-pci-led-with-timer-reecewayt/deliverables[01;32mreecewayt@fossa-zen[00m:[01;34m~/ece373/assignment-5-pci-led-with-timer-reecewayt/deliverables[00m$ ./us[K[K[K[Kls
+[0m[01;34mbuild[0m  Makefile  my-e1000-drv-timer.c  my-e1000-drv-timer.h  my-script.txt  my_script.txt  README.md  script-recording.txt  typescript  usr_space_led_test.c
+]0;reecewayt@fossa-zen: ~/ece373/assignment-5-pci-led-with-timer-reecewayt/deliverables[01;32mreecewayt@fossa-zen[00m:[01;34m~/ece373/assignment-5-pci-led-with-timer-reecewayt/deliverables[00m$ ./build/m[Kusr_space_led_test.o 
+Failed to open the device...: Permission denied
+Error description: Permission denied
+]0;reecewayt@fossa-zen: ~/ece373/assignment-5-pci-led-with-timer-reecewayt/deliverables[01;32mreecewayt@fossa-zen[00m:[01;34m~/ece373/assignment-5-pci-led-with-timer-reecewayt/deliverables[00m$ sudo chmod 666 /dev/my-e1000-drv-timer 
+]0;reecewayt@fossa-zen: ~/ece373/assignment-5-pci-led-with-timer-reecewayt/deliverables[01;32mreecewayt@fossa-zen[00m:[01;34m~/ece373/assignment-5-pci-led-with-timer-reecewayt/deliverables[00m$ ./build/usr_space_led_test.o 
+Current blink rate: 1
+Enter a new blink rate...
+2
+Last value entered was 2... Try again
+Enter a new blink rate...
+4
+Last value entered was 4... Try again
+Enter a new blink rate...
+^C
+Received Ctrl-C (SIGINT), closing device and exiting...
+]0;reecewayt@fossa-zen: ~/ece373/assignment-5-pci-led-with-timer-reecewayt/deliverables[01;32mreecewayt@fossa-zen[00m:[01;34m~/ece373/assignment-5-pci-led-with-timer-reecewayt/deliverables[00m$ exit
+exit
+
+Script done on 2024-05-31 11:58:17-07:00 [COMMAND_EXIT_CODE="0"]
