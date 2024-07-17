@@ -1,0 +1,3 @@
+/deliverables/build/*
+*.o
+*ledmon
