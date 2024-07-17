@@ -72,8 +72,7 @@ int fchar_open(struct inode *inode, struct file *filp) {
     //device is being used by process
     dev_data->busy = true; 
 
-    //set private data for struct file for success file ops; essentially stores
-    //device specific structure inside the calling process's file descriptor
+    //set private data for struct file- useful for preserving state information across system calls
     filp->private_data = dev_data;
 
     printk(KERN_INFO "Device opened: %s... SUCCESS!\n", DEVICE_NAME);
